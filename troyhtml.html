@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>My LaunchFlow Website</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#007BFF;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    width:300px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#007BFF;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>My Static Website</h1>
+<p>LaunchFlow Activity</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<section>
+
+<div class="card">
+
+<h2>Welcome!</h2>
+
+<p>This is my simple static website deployed using GitHub Pages.</p>
+
+<button onclick="showMessage()">Click Me</button>
+
+<p id="demo"></p>
+
+</div>
+
+</section>
+
+<footer>
+<p>Created by Student | LaunchFlow</p>
+</footer>
+
+<script>
+
+function showMessage(){
+document.getElementById("demo").innerHTML="Hello! Thanks for visiting my website.";
+}
+
+</script>
+
+</body>
+</html>
